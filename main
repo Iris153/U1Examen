@@ -1,0 +1,98 @@
+package examenu1es;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExamenU1Es {
+
+    public static void main(String[] args) {
+
+        Scanner leer = new Scanner(System.in);
+
+        ArrayList lista = new ArrayList();
+
+        int opc;
+        int dato;
+
+        System.out.println("Ingresa el dato 1: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 2: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 3: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 4: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 5: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 6: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 7: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 8: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 9: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+        System.out.println("Ingresa el dato 10: ");
+        dato = leer.nextInt();
+        lista.add(dato);
+       
+
+        do {
+
+            System.out.println("que operacion desea realizar?: ");
+            System.out.println("1. Suma");
+            System.out.println("2. Resta");
+            System.out.println("3. Multiplicacion");
+            System.out.println("4. Salir");
+
+            opc = leer.nextInt();
+            switch (opc) {
+                case 1:
+                    System.out.println("Que posicion deseas suma? (Escribe 3) ");
+                    dato = leer.nextInt();
+                    lista.add(dato);
+                    dato = leer.nextInt();
+                    lista.add(dato);
+                    dato = leer.nextInt();
+                    lista.add(dato);
+
+                    int suma = dato + dato + dato;
+                    System.out.println("La suma es: " + suma);
+
+                    break;
+                case 2:
+                    System.out.println("Que posicion deseas restar?");
+                    dato = leer.nextInt();
+                    dato = leer.nextInt();
+                    int resta = dato - dato;
+                    System.out.println("La resta es: " + resta);
+
+                    break;
+                case 3:
+                    System.out.println("Que posicion deseas multiplicar?");
+                    dato = leer.nextInt();
+                    dato = leer.nextInt();
+                    int multiplicacion = dato * dato;
+                    System.out.println("La multiplicacion es: " + multiplicacion);
+
+                    break;
+                case 4:
+                    boolean salir = true;
+                    System.out.println("Usted ha salido");
+                    break;
+
+            }
+        } while (opc != 4);
+
+    }
+
+}
